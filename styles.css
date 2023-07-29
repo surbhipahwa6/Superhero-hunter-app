@@ -1,0 +1,178 @@
+/* Set the body position, padding, and minimum height */
+body {
+    position: relative;
+    padding: 1rem;
+    min-height: 100vh;
+}
+
+/* Styling for the background video/image */
+.video-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+#myVideo {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    opacity: 0.7;
+}
+
+/* Overlay layer to enhance UI */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+/* Styling for the header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+#logo {
+    cursor: pointer;
+    color: red;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    font-style: italic;
+    justify-content: center;
+}
+
+#logo span {
+    margin-left: 0.2em;
+}
+
+#logo-img {
+    height: 1.5em;
+    width: 2em;
+    border-radius: 50%;
+}
+
+/* Hover effect for the logo */
+header #logo:hover {
+    color: #fff;
+    transition: 0.2s ease-in;
+}
+
+header #logo:hover #logo-img {
+    background-color: #fff;
+    transition: 0.2s ease-in;
+}
+
+/* Heart button styling */
+.heart-button a {
+    font-size: 3rem;
+    color: red;
+    cursor: pointer;
+    margin-right: 1em;
+}
+
+/* Styling for the favorites link */
+.fav-link {
+    font-size: 1.5rem;
+    color: red;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Hover effect for the favorites link */
+.fav-link:hover {
+    color: white;
+    transition: 0.2s ease-in;
+}
+
+/* Styling for the search bar */
+#search-bar {
+    height: auto;
+    width: 60vw;
+    margin: 3rem auto;
+    border: rgb(243, 8, 8) solid 2px;
+    border-radius: 5px;
+    background-color: azure;
+    position: relative;
+}
+
+#search {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+/* Styling for the search result card */
+#search-result-message {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    position: relative;
+    top: 5rem;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 86%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.card {
+    padding: 0;
+    margin: 1em;
+    background-color: aliceblue;
+}
+
+.card-body {
+    padding: 0;
+}
+
+.card-img-top {
+    height: 11rem;
+    object-fit: cover;
+}
+
+.card-title {
+    text-align: center;
+    margin: 0.5em;
+}
+
+.favorites-icon {
+    position: absolute;
+    top: -1%;
+    left: 4%;
+    font-size: 2em;
+    text-shadow: 0 0 5px red;
+    color: white;
+}
+
+/* Class to add red color to the favorite heart icon */
+.red-bg {
+    color: red;
+    transition: 0.2s ease-in;
+}

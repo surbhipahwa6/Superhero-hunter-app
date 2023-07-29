@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --poppins-font: 'Poppins', sans-serif;
+    --dark-color: #0a0a0a;
+    --red-color: #f64445;
+    --light-color: #fff;
+    --grey-color: #505050;
+    --yellow-color: #f2c10e;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.7rem;
+    min-height: 100vh;
+    background: var(--red-color);
+    background: linear-gradient(169deg, #f64445 0%, #611cac 100%);
+    line-height: 1.6;
+    font-family: var(--poppins-font);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: stretch;
+    -ms-flex-pack: stretch;
+    justify-content: center;
+}
+
+button,
+input {
+    font-family: inherit;
+    font-size: 1.8rem;
+    outline: 0;
+    border: none;
+    background-color: transparent;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+/* hero div */
+.hero {
+
+    background-color: var(--dark-color);
+    margin: 2rem;
+    border-radius: 6px;
+    color: #fff;
+    -webkit-box-shadow: 0px 5px 11px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 5px 11px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+/* hero details */
+.hero-details {
+    padding: 2rem;
+}
+
+.hero-details::-webkit-scrollbar {
+    width: 7px;
+}
+
+.hero-details::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.hero-details::-webkit-scrollbar-thumb {
+    background-color: var(--red-color);
+    border-radius: 5px;
+}
+
+/* app body tabs heads */
+.hero-details-tabs-head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    padding-bottom: 1.6rem;
+    margin: 2.4rem 0;
+}
+
+.tab-head-single {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    font-weight: 500;
+    font-size: 1.9rem;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+.tab-head-single:hover {
+    opacity: 0.9;
+}
+
+.tab-head-single.active-tab::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1.7rem;
+    width: 100%;
+    height: 4px;
+    background-color: var(--red-color);
+}
+
+/* app body content */
+.hero-details-content {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    -webkit-column-gap: 4rem;
+    -moz-column-gap: 4rem;
+    column-gap: 4rem;
+    margin: 2rem;
+}
+
+.hero-details-content-thumbnail {
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.hero-details-content-list .name {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 3.4rem;
+    font-weight: 500;
+    margin-top: -1.2rem;
+}
+
+.hero-details-tabs-body {
+    margin-top: 3.6rem;
+}
+
+
+/* biography */
+.biography {
+    display: none;
+}
+
+.biography li {
+    margin: 3.4rem 0;
+}
+
+.biography li span {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1.9rem;
+}
+
+.biography li span:first-child {
+    font-weight: 600;
+    color: var(--grey-color);
+    margin-right: 1rem;
+}
+
+.biography li span:last-child {
+    font-weight: 300;
+}
+
+/* Comics */
+.Comics {
+    display: none;
+}
+
+.Comics li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 1.2rem auto;
+    padding: 1.2rem;
+    -webkit-box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.5);
+}
+
+.Comics li div i {
+    color: var(--red-color);
+}
+
+.Comics li div span {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 7px;
+    padding: 0 1.2rem;
+    margin: 0 1.6rem;
+    opacity: 0.6;
+    font-size: 1.7rem;
+}
+
+.Comics li>span {
+    color: var(--yellow-color);
+    font-weight: 700;
+}
+
+/* Events */
+.Events {
+    display: none;
+}
+
+.Events li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 1.2rem auto;
+    padding: 1.2rem;
+    -webkit-box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.5);
+}
+
+.Events li div i {
+    color: var(--red-color);
+}
+
+.Events li div span {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 7px;
+    padding: 0 1.2rem;
+    margin: 0 1.6rem;
+    opacity: 0.6;
+    font-size: 1.7rem;
+}
+
+.Events li>span {
+    color: var(--yellow-color);
+    font-weight: 700;
+}
+/* Series */
+.Series {
+    display: none;
+}
+
+.Series li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 1.2rem auto;
+    padding: 1.2rem;
+    -webkit-box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.5);
+}
+
+.Series li div i {
+    color: var(--red-color);
+}
+
+.Series li div span {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 7px;
+    padding: 0 1.2rem;
+    margin: 0 1.6rem;
+    opacity: 0.6;
+    font-size: 1.7rem;
+}
+
+.Series li>span {
+    color: var(--yellow-color);
+    font-weight: 700;
+}
+
+/* Stories */
+.Stories {
+    display: none;
+}
+
+.Stories li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 1.2rem auto;
+    padding: 1.2rem;
+    -webkit-box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.5);
+}
+
+.Stories li div i {
+    color: var(--red-color);
+}
+
+.Stories li div span {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 7px;
+    padding: 0 1.2rem;
+    margin: 0 1.6rem;
+    opacity: 0.6;
+    font-size: 1.7rem;
+}
+
+.Stories li>span {
+    color: var(--yellow-color);
+    font-weight: 700;
+}
+/* show-tab */
+.show-tab{
+    display: block;
+}

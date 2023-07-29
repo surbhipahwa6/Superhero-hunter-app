@@ -1,0 +1,21 @@
+body{
+    position: relative;
+    background-image: url(./assets/Marvel\ superheroes\ wallpaper\ hd\ \ \ SF\ Wallpaper.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main{
+    margin-top: 2rem;
+}
+
+/* for favourite superhero card display */
+.container{
+margin: 2rem;
+}
+
+.row {
+    display: flex;
+    justify-content: flex-start;
+}
