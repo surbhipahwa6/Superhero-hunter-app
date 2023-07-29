@@ -55,6 +55,10 @@ The Superhero Hunter App is a web application that allows users to explore and d
 
 9. Enjoy an interactive experience on the home page by clicking on the logo to play/pause the background video.
 
+## Link
+
+Live -https://surbhipahwa6.github.io/Superhero-hunter-app/
+
 ## Author
 
 This Superhero Hunter application is developed by Surbhi Pahwa. You can contact me at surbhipahwa36@gmail.com for any questions or inquiries related to this project.
